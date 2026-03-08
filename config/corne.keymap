@@ -15,70 +15,70 @@
     keymap {
         compatible = "zmk,keymap";
 
-        x_layer {
+        x {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
             // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
-            display-name = "x_layer";
+            display-name = "x";
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp E     &kp R  &kp T        &kp Y      &kp U  &kp I      &kp O    &kp P     &kp BACKSPACE
-&kp LCTRL       &kp A  &kp S  &kp D     &kp F  &kp G        &kp H      &kp J  &kp K      &kp L    &kp SEMI  &kp DELETE
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C     &kp V  &kp B        &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                              &kp LGUI  &mo 1  &kp SPACE    &kp ENTER  &mo 2  &kp RALT
+&kp TAB           &kp Q  &kp W  &kp E     &kp R  &kp T        &kp Y      &kp U  &kp I      &kp O    &kp P     &kp BACKSPACE
+&kp LEFT_SHIFT    &kp A  &kp S  &kp D     &kp F  &kp G        &kp H      &kp J  &kp K      &kp L    &kp SEMI  &kp DELETE
+&kp LEFT_CONTROL  &kp Z  &kp X  &kp C     &kp V  &kp B        &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+                                &kp LGUI  &mo 1  &kp SPACE    &kp ENTER  &mo 2  &kp RALT
             >;
         };
 
-        y_layer {
+        y {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
             // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
-            display-name = "y_layer";
+            display-name = "y";
             bindings = <
-&trans  &kp N1     &kp N2     &kp N3     &kp N4            &kp N5               &kp N6         &kp N7   &kp N8  &kp N9   &kp N0   &trans
-&trans  &kp GRAVE  &kp MINUS  &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &kp BACKSLASH  &kp SQT  &trans  &kp F11  &kp F12  &trans
-&trans  &kp F1     &kp F2     &kp F3     &kp F4            &kp F5               &kp F6         &kp F7   &kp F8  &kp F9   &kp F10  &trans
-                              &trans     &trans            &trans               &trans         &trans   &trans
+&trans  &kp N1       &kp N2        &kp N3                &kp N4                 &kp N5             &kp N6     &kp N7            &kp N8             &kp N9         &kp N0     &trans
+&trans  &kp AT       &kp POUND     &kp DOLLAR            &kp GRAVE              &kp AMPERSAND      &kp LEFT   &kp DOWN          &kp UP             &kp RIGHT      &kp APOS   &trans
+&trans  &kp PERCENT  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EXCLAMATION    &kp MINUS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &kp EQUAL  &trans
+                                   &trans                &trans                 &trans             &trans     &trans            &trans
             >;
         };
 
-        z_layer {
+        z {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
             // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
-            display-name = "z_layer";
+            display-name = "z";
             bindings = <
-&trans  &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &kp C_VOLUME_UP    &kp C_BRIGHTNESS_INC    &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_CLR       &bt BT_DISC 0  &trans
-&trans  &kp INS          &kp HOME        &kp PAGE_UP      &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans         &trans
-&trans  &kp C_MENU       &kp END         &kp PAGE_DOWN    &kp K_MUTE         &sys_reset              &sys_reset      &studio_unlock  &trans        &trans           &trans         &trans
-                                         &trans           &trans             &trans                  &trans          &trans          &trans
+&trans  &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &kp C_VOLUME_UP    &kp C_BRIGHTNESS_INC        &kp F1  &kp F2      &kp F3  &kp F4   &kp F5   &trans
+&trans  &kp INS          &kp HOME        &kp PAGE_UP      &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC        &kp F6  &kp F7      &kp F8  &kp F9   &kp F10  &trans
+&trans  &kp C_MENU       &kp END         &kp PAGE_DOWN    &kp K_MUTE         &kp C_BRIGHTNESS_MINIMUM    &trans  &caps_word  &trans  &kp F11  &kp F12  &trans
+                                         &trans           &trans             &trans                      &trans  &trans      &trans
             >;
         };
 
-        w_layer {
+        w {
             bindings = <
-&trans  &trans      &trans  &trans  &trans  &trans    &trans            &mkp LCLK         &mkp RCLK        &trans           &trans  &trans
-&trans  &caps_word  &trans  &trans  &trans  &trans    &mmv MOVE_LEFT    &mmv MOVE_DOWN    &mmv MOVE_UP     &mmv MOVE_RIGHT  &trans  &trans
-&trans  &trans      &trans  &trans  &trans  &trans    &msc MOVE_X(-20)  &msc MOVE_Y(-20)  &msc MOVE_Y(20)  &msc MOVE_X(20)  &trans  &trans
-                            &trans  &trans  &trans    &trans            &trans            &trans
+&trans  &trans        &trans        &trans        &trans      &trans           &mkp MB4          &mkp LCLK         &mkp RCLK        &mkp MB5         &trans      &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR  &bt BT_DISC 0    &mmv MOVE_LEFT    &mmv MOVE_DOWN    &mmv MOVE_UP     &mmv MOVE_RIGHT  &trans      &trans
+&trans  &sys_reset    &trans        &trans        &trans      &trans           &msc MOVE_X(-20)  &msc MOVE_Y(-20)  &msc MOVE_Y(20)  &msc MOVE_X(20)  &sys_reset  &trans
+                                    &trans        &trans      &trans           &trans            &trans            &trans
             >;
 
-            label = "w_layer";
+            label = "w";
         };
     };
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
-        w_layer {
+        w {
             if-layers = <1 2>;
             then-layer = <3>;
         };
