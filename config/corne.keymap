@@ -19,7 +19,7 @@
             bindings = <&mo>, <&tog>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <100>;
+            tapping-term-ms = <200>;
         };
 
         ht_kp: ht_kp {
