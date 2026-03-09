@@ -21,6 +21,15 @@
             #binding-cells = <2>;
             tapping-term-ms = <100>;
         };
+
+        ht_kp: ht_kp {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT_KP";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <199>;
+        };
     };
 
     keymap {
@@ -35,10 +44,10 @@
 
             display-name = "x";
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp E     &kp R          &kp T        &kp Y      &kp U          &kp I      &kp O    &kp P     &kp BACKSPACE
-&kp LCTRL       &kp A  &kp S  &kp D     &kp F          &kp G        &kp H      &kp J          &kp K      &kp L    &kp SEMI  &kp DELETE
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C     &kp V          &kp B        &kp N      &kp M          &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                              &kp LGUI  &ht_layer 1 1  &kp SPACE    &kp ENTER  &ht_layer 2 2  &kp RALT
+&kp TAB         &kp Q  &kp W  &kp E     &kp R          &kp T                    &kp Y               &kp U          &kp I      &kp O    &kp P     &kp BACKSPACE
+&kp CAPSLOCK    &kp A  &kp S  &kp D     &kp F          &kp G                    &kp H               &kp J          &kp K      &kp L    &kp SEMI  &kp DELETE
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C     &kp V          &kp B                    &kp N               &kp M          &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+                              &kp LGUI  &ht_layer 1 1  &ht_kp LEFT_ALT SPACE    &ht_kp RCTRL ENTER  &ht_layer 2 2  &kp RALT
             >;
         };
 
@@ -67,10 +76,10 @@
 
             display-name = "z";
             bindings = <
-&trans  &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &kp C_VOLUME_UP    &kp C_BRIGHTNESS_INC        &kp F1  &kp F2      &kp F3  &kp F4   &kp F5   &trans
-&trans  &kp INS          &kp HOME        &kp PAGE_UP      &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC        &kp F6  &kp F7      &kp F8  &kp F9   &kp F10  &trans
-&trans  &kp C_MENU       &kp END         &kp PAGE_DOWN    &kp K_MUTE         &kp C_BRIGHTNESS_MINIMUM    &trans  &caps_word  &trans  &kp F11  &kp F12  &trans
-                                         &trans           &trans             &trans                      &trans  &trans      &trans
+&trans  &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &kp C_VOLUME_UP    &kp C_BRIGHTNESS_INC        &kp F1  &kp F2  &kp F3  &kp F4   &kp F5   &trans
+&trans  &kp INS          &kp HOME        &kp PAGE_UP      &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC        &kp F6  &kp F7  &kp F8  &kp F9   &kp F10  &trans
+&trans  &kp C_MENU       &kp END         &kp PAGE_DOWN    &kp K_MUTE         &kp C_BRIGHTNESS_MINIMUM    &trans  &trans  &trans  &kp F11  &kp F12  &trans
+                                         &trans           &trans             &trans                      &trans  &trans  &trans
             >;
         };
 
