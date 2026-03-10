@@ -45,7 +45,7 @@
             display-name = "x";
             bindings = <
 &kp ESCAPE      &kp Q  &kp W  &kp E      &kp R          &kp T                    &kp Y               &kp U          &kp I      &kp O    &kp P     &kp BACKSPACE
-&kp TAB         &kp A  &kp S  &kp D      &kp F          &kp G                    &kp H               &kp J          &kp K      &kp L    &kp SEMI  &kp DELETE
+&kp TAB         &kp A  &kp S  &kp D      &kp F          &kp G                    &kp H               &kp J          &kp K      &kp L    &kp SEMI  &ht_kp X DEL
 &kp LEFT_SHIFT  &kp Z  &kp X  &kp C      &kp V          &kp B                    &kp N               &kp M          &kp COMMA  &kp DOT  &kp FSLH  &kp LEFT_GUI
                               &kp LCTRL  &ht_layer 1 1  &ht_kp LEFT_ALT SPACE    &ht_kp RCTRL ENTER  &ht_layer 2 2  &kp RALT
             >;
@@ -61,7 +61,7 @@
             display-name = "y";
             bindings = <
 &trans  &kp N1       &kp N2        &kp N3                &kp N4                 &kp N5           &kp N6     &kp N7            &kp N8             &kp N9         &kp N0           &trans
-&trans  &kp AT       &kp DOLLAR    &kp POUND             &kp GRAVE              &kp BACKSLASH    &kp LEFT   &kp DOWN          &kp UP             &kp RIGHT      &kp APOS         &trans
+&trans  &kp AT       &kp DOLLAR    &kp POUND             &kp GRAVE              &kp BACKSLASH    &kp LEFT   &kp DOWN          &kp UP             &kp RIGHT      &kp APOS         &ht_kp Y DEL
 &trans  &kp PERCENT  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS        &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp AMPERSAND  &kp EXCLAMATION  &trans
                                    &trans                &trans                 &trans           &trans     &trans            &trans
             >;
@@ -77,7 +77,7 @@
             display-name = "z";
             bindings = <
 &trans  &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &kp C_VOLUME_UP    &kp C_BRIGHTNESS_INC        &kp F1  &kp F2        &kp F3  &kp F4   &kp F5   &trans
-&trans  &kp INS          &kp HOME        &kp PAGE_UP      &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC        &kp F6  &kp F7        &kp F8  &kp F9   &kp F10  &trans
+&trans  &kp INS          &kp HOME        &kp PAGE_UP      &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC        &kp F6  &kp F7        &kp F8  &kp F9   &kp F10  &ht_kp Z DEL
 &trans  &kp C_MENU       &kp END         &kp PAGE_DOWN    &kp K_MUTE         &kp C_BRIGHTNESS_MINIMUM    &trans  &kp CAPSLOCK  &trans  &kp F11  &kp F12  &trans
                                          &trans           &trans             &trans                      &trans  &trans        &trans
             >;
@@ -86,7 +86,7 @@
         w {
             bindings = <
 &trans  &trans        &trans        &trans        &trans      &trans           &mkp MB4          &mkp LCLK         &mkp RCLK        &mkp MB5         &trans      &trans
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR  &bt BT_DISC 0    &mmv MOVE_LEFT    &mmv MOVE_DOWN    &mmv MOVE_UP     &mmv MOVE_RIGHT  &trans      &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR  &bt BT_DISC 0    &mmv MOVE_LEFT    &mmv MOVE_DOWN    &mmv MOVE_UP     &mmv MOVE_RIGHT  &trans      &ht_kp W DEL
 &trans  &sys_reset    &trans        &trans        &trans      &trans           &msc MOVE_X(-20)  &msc MOVE_Y(-20)  &msc MOVE_Y(20)  &msc MOVE_X(20)  &sys_reset  &trans
                                     &trans        &trans      &trans           &trans            &trans            &trans
             >;
