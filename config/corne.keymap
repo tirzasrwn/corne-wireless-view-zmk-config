@@ -36,6 +36,8 @@
             label = "TD_SHIFT_CAPS";
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
+
+            tapping-term-ms = <300>;
         };
 
         td_alt_shift: td_alt_shift {
