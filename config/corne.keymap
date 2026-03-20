@@ -45,6 +45,8 @@
             label = "TD_ALT_SHIFT";
             #binding-cells = <0>;
             bindings = <&kp LEFT_ALT>, <&kp LSHIFT>;
+
+            tapping-term-ms = <300>;
         };
 
         td_ctrl_shift: td_ctrl_shift {
@@ -52,6 +54,8 @@
             label = "TD_CTRL_SHIFT";
             #binding-cells = <0>;
             bindings = <&kp RCTRL>, <&kp RIGHT_SHIFT>;
+
+            tapping-term-ms = <300>;
         };
     };
 
@@ -99,10 +103,10 @@
 
             display-name = "z";
             bindings = <
-&trans  &kp PRINTSCREEN     &kp SCROLLLOCK  &kp PAUSE_BREAK  &kp C_VOLUME_UP    &kp C_BRIGHTNESS_INC    &kp F1      &kp F2            &kp F3      &kp F4   &kp F5   &ht_kp Z DELETE
-&trans  &kp INS             &kp HOME        &kp PAGE_UP      &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC    &kp F6      &kp F7            &kp F8      &kp F9   &kp F10  &trans
-&trans  &kp K_CONTEXT_MENU  &kp END         &kp PAGE_DOWN    &kp K_MUTE         &trans                  &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &kp F11  &kp F12  &trans
-                                            &trans           &trans             &trans                  &trans      &trans            &trans
+&trans  &kp PRINTSCREEN     &kp SCROLLLOCK  &kp PAUSE_BREAK  &kp C_VOLUME_UP    &kp C_BRIGHTNESS_INC    &kp F1   &kp F2   &kp F3  &kp F4  &kp F5   &ht_kp Z DELETE
+&trans  &kp INS             &kp HOME        &kp PAGE_UP      &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC    &kp F6   &kp F7   &kp F8  &kp F9  &kp F10  &trans
+&trans  &kp K_CONTEXT_MENU  &kp END         &kp PAGE_DOWN    &kp K_MUTE         &trans                  &kp F11  &kp F12  &trans  &trans  &trans   &trans
+                                            &trans           &trans             &trans                  &trans   &trans   &trans
             >;
         };
 
