@@ -30,6 +30,27 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
+        td_shift_caps: td_shift_caps {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_SHIFT_CAPS";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
+        };
+
+        td_alt_shift: td_alt_shift {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_ALT_SHIFT";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT>, <&kp LSHIFT>;
+        };
+
+        td_ctrl_shift: td_ctrl_shift {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_CTRL_SHIFT";
+            #binding-cells = <0>;
+            bindings = <&kp RCTRL>, <&kp RIGHT_SHIFT>;
+        };
     };
 
     keymap {
@@ -44,10 +65,10 @@
 
             display-name = "x";
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp E         &kp R          &kp T                 &kp Y                   &kp U          &kp I      &kp O    &kp P     &ht_kp X DELETE
-&kp ESCAPE      &kp A  &kp S  &kp D         &kp F          &kp G                 &kp H                   &kp J          &kp K      &kp L    &kp SEMI  &kp BACKSPACE
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C         &kp V          &kp B                 &kp N                   &kp M          &kp COMMA  &kp DOT  &kp FSLH  &kp RGUI
-                              &kp LEFT_ALT  &ht_layer 1 1  &ht_kp LCTRL SPACE    &ht_kp RIGHT_ALT ENTER  &ht_layer 2 2  &kp RCTRL
+&kp TAB         &kp Q  &kp W  &kp E          &kp R          &kp T                 &kp Y                   &kp U          &kp I           &kp O    &kp P     &ht_kp X DELETE
+&kp ESCAPE      &kp A  &kp S  &kp D          &kp F          &kp G                 &kp H                   &kp J          &kp K           &kp L    &kp SEMI  &kp BACKSPACE
+&td_shift_caps  &kp Z  &kp X  &kp C          &kp V          &kp B                 &kp N                   &kp M          &kp COMMA       &kp DOT  &kp FSLH  &kp RGUI
+                              &td_alt_shift  &ht_layer 1 1  &ht_kp LCTRL SPACE    &ht_kp RIGHT_ALT ENTER  &ht_layer 2 2  &td_ctrl_shift
             >;
         };
 
@@ -76,10 +97,10 @@
 
             display-name = "z";
             bindings = <
-&trans  &kp PRINTSCREEN     &kp SCROLLLOCK  &kp PAUSE_BREAK  &kp C_VOLUME_UP    &kp C_BRIGHTNESS_INC        &kp F1  &kp F2        &kp F3  &kp F4   &kp F5   &ht_kp Z DELETE
-&trans  &kp INS             &kp HOME        &kp PAGE_UP      &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC        &kp F6  &kp F7        &kp F8  &kp F9   &kp F10  &trans
-&trans  &kp K_CONTEXT_MENU  &kp END         &kp PAGE_DOWN    &kp K_MUTE         &kp C_BRIGHTNESS_MINIMUM    &trans  &kp CAPSLOCK  &trans  &kp F11  &kp F12  &trans
-                                            &trans           &trans             &trans                      &trans  &trans        &trans
+&trans  &kp PRINTSCREEN     &kp SCROLLLOCK  &kp PAUSE_BREAK  &kp C_VOLUME_UP    &kp C_BRIGHTNESS_INC    &kp F1      &kp F2            &kp F3      &kp F4   &kp F5   &ht_kp Z DELETE
+&trans  &kp INS             &kp HOME        &kp PAGE_UP      &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC    &kp F6      &kp F7            &kp F8      &kp F9   &kp F10  &trans
+&trans  &kp K_CONTEXT_MENU  &kp END         &kp PAGE_DOWN    &kp K_MUTE         &trans                  &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &kp F11  &kp F12  &trans
+                                            &trans           &trans             &trans                  &trans      &trans            &trans
             >;
         };
 
