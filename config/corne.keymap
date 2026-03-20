@@ -76,10 +76,10 @@
 
             display-name = "z";
             bindings = <
-&trans  &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &kp C_VOLUME_UP    &kp C_BRIGHTNESS_INC        &kp F1  &kp F2        &kp F3  &kp F4   &kp F5   &ht_kp Z DELETE
-&trans  &kp INS          &kp HOME        &kp PAGE_UP      &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC        &kp F6  &kp F7        &kp F8  &kp F9   &kp F10  &trans
-&trans  &kp C_MENU       &kp END         &kp PAGE_DOWN    &kp K_MUTE         &kp C_BRIGHTNESS_MINIMUM    &trans  &kp CAPSLOCK  &trans  &kp F11  &kp F12  &trans
-                                         &trans           &trans             &trans                      &trans  &trans        &trans
+&trans  &kp PRINTSCREEN     &kp SCROLLLOCK  &kp PAUSE_BREAK  &kp C_VOLUME_UP    &kp C_BRIGHTNESS_INC        &kp F1  &kp F2        &kp F3  &kp F4   &kp F5   &ht_kp Z DELETE
+&trans  &kp INS             &kp HOME        &kp PAGE_UP      &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC        &kp F6  &kp F7        &kp F8  &kp F9   &kp F10  &trans
+&trans  &kp K_CONTEXT_MENU  &kp END         &kp PAGE_DOWN    &kp K_MUTE         &kp C_BRIGHTNESS_MINIMUM    &trans  &kp CAPSLOCK  &trans  &kp F11  &kp F12  &trans
+                                            &trans           &trans             &trans                      &trans  &trans        &trans
             >;
         };
 
